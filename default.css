@@ -222,8 +222,13 @@ ul{
     cursor: pointer;
 }
 .theme-dot:hover{
-    border: 4px solid var(--themeDotBorder);
+    /* border: 4px solid var(--themeDotBorder); */
+    transform: scale(1.2);
+    transform-origin: center;
 }
+
+
+
 
 #settings-note{
     font-size: 12px;
@@ -454,6 +459,21 @@ ul{
     .right-column{
         justify-content: center;
     }
+    .input-field{
+        width: 80%;
+        display: flex;
+    }
+
+    #submit-btn{
+        margin-top: 10px;
+        width: 80%;
+        /* padding-top: 10px;
+        padding-bottom: 10px;
+        color: #fff;
+        background-color: var(--buttonColor);
+        border: none; */
+    }
+    
     
 
 }
