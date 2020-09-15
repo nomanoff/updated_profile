@@ -458,7 +458,11 @@ ul{
 
     .right-column{
         justify-content: center;
+        margin-bottom: 30px;
+
     }
+
+
     .input-field{
         width: 95%;
         display: flex;
@@ -477,5 +481,26 @@ ul{
     
 
 }
+
+@media screen and (max-width: 600px){
+    
+
+    #preview-shadow{
+        background-color: var(--previewShadow);
+        width: 200px;
+        height: 150px;
+        padding-left: 35px;
+        padding-top: 35px;
+    }
+    
+    #preview{
+        width: 200px;
+        height: 150px;
+        
+    
+    }
+
+}
+
 
 
