@@ -26,6 +26,7 @@ html, body{
 
 body *{
  transition: 0.3s;
+ box-sizing: border-box;
 }
 
 
@@ -477,7 +478,7 @@ ul{
     }
 
     #submit-btn{
-        margin-top: 10px;
+       
         width: 95%;
         /* padding-top: 10px;
         padding-bottom: 10px;
