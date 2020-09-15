@@ -263,6 +263,31 @@ ul{
     padding-bottom: 60px;
 }
 
+
+
+
+.typing::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 25px;
+    border-right: 1px solid #F4F1DE;
+    animation: blink 0.4s infinite;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
 #preview-shadow{
     background-color: var(--previewShadow);
     width: 300px;
@@ -467,7 +492,7 @@ ul{
 
     .right-column{
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
 
     }
 
@@ -497,14 +522,14 @@ ul{
     #preview-shadow{
         background-color: var(--previewShadow);
         width: 200px;
-        height: 150px;
+        height: 190px;
         padding-left: 35px;
         padding-top: 35px;
     }
     
     #preview{
         width: 200px;
-        height: 150px;
+        height: 190px;
         
     
     }
