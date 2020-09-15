@@ -460,13 +460,13 @@ ul{
         justify-content: center;
     }
     .input-field{
-        width: 80%;
+        width: 100%;
         display: flex;
     }
 
     #submit-btn{
         margin-top: 10px;
-        width: 80%;
+        width: 100%;
         /* padding-top: 10px;
         padding-bottom: 10px;
         color: #fff;
