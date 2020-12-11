@@ -47,7 +47,7 @@ function setTheme(mode){
 
 //////////////////////////TYPING EFFECT////////////////
 
-const message = ["Who am I?"];
+const message = ["Who am I ?"];
 let count = 0;
 let index = 0;
 let currentText = "";
@@ -69,7 +69,7 @@ function type(){
         count++;
         index = 0;
     }
-    setTimeout(type, 200);
+    setTimeout(type, 300);
 };
 
 type();
