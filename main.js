@@ -62,7 +62,7 @@ function type(){
 
     currentText = message[count];
     letter = currentText.slice(0, ++index);
-    console.log(letter);
+    
 
     document.querySelector('.typing').textContent = letter;
     if(letter.length === currentText.length){

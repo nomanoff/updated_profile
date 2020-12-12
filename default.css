@@ -81,20 +81,20 @@ ul{
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
 }
-.post-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-}
 
 
 
 .main-container{
     width: 1200px;
-    height: 100vh;
-    margin: 3rem auto;
+    height: 100vh; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
 }
+
 
 
 /* * * * * * * GREETING * * * * * * */
@@ -104,7 +104,6 @@ ul{
     display: grid;
     text-align: center;
     align-content: center;
-    
     min-height: 10em;
 }
 
@@ -117,6 +116,8 @@ ul{
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
+    max-width: 940px;
+    width: 100%;
 
     -webkit-box-shadow: -1px -1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px -1px 3px -1px rgba(0,0,0,0.75);
@@ -124,7 +125,6 @@ ul{
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 3em 30em; */
     grid-template-areas: 
         'nav nav'
         'left right'
@@ -304,7 +304,7 @@ ul{
 #preview-shadow{
     background-color: var(--previewShadow);
     width: 300px;
-    height: 130px;
+    height: 200px;
     padding-left: 30px;
     padding-top: 30px;
 }
@@ -388,22 +388,29 @@ ul{
 
 /* * * * * * * PROJECTS SECTION * * * * * * */
 
+.main-container h4{
+    font-size: 3rem;
+    letter-spacing: 5px;
 
-.post-wrapper{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, 320px); 
-   justify-content: center;
-   gap: 20px;
-   padding-bottom: 50px;
 }
 
+.post-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 4rem 0;
+}
+
+
+
 .post{
+    width: 350px;
+    margin: 1rem;
     border: 1px solid var(--borderColor);
     -webkit-box-shadow: -1px -1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px -1px 3px -1px rgba(0,0,0,0.75);
     box-shadow: -1px -1px 3px -1px rgba(0,0,0,0.75);
 
-    cursor: pointer;
 }
 
 .thumbnail{
@@ -417,20 +424,61 @@ ul{
 .post-preview{
     background-color: #fff;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
 }
 
 .post-title{
     color: black;
-    margin: 0;
+    margin: 1.5rem;
+    font-size: 1.3rem;
 }
 
-.post-intro{
-    color: #4b5156;
+.view-link{
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-size: 1.3rem;
+    margin: 1rem;
+    background-color: #696a6d;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.view-link:hover{
+    background-color: #515255;
+    color: white;
+    cursor: pointer;
 }
 
 
 
-/* * * * * * * CONTACT FORM * * * * * * */
+
+
+
+
+
+/* * * * * * * * * * * U P D A T E D    P R O J E C T S    S E C T I O N * * * * * * * * * * */
+
+
+
+
+
+
+
+
+
+
+
+/*  *  *  *  *   *   *   C O N T A C T     F O R M     *  *  *   *  *   *  */
+
+
+
+
 
 #contact-form{
 	display: block;
@@ -513,6 +561,10 @@ ul{
     .input-field{
         
         display: flex;
+    }
+
+    .post-wrapper{
+        flex-direction: column;
     }
 
   
