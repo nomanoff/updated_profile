@@ -68,9 +68,9 @@ ul{
 
 
 .s1{
+
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
-    overflow: auto;
 }
 
 
@@ -83,9 +83,9 @@ ul{
 
 
 .main-container{
-    width: 1200px;
-    height: 150vh; 
-    margin: 0 auto; 
+    max-width: 1300px;
+    width: 100%;
+    height: 100vh;  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -286,6 +286,7 @@ ul{
     animation: blink 0.4s infinite;
 }
 
+
 @keyframes blink{
     0%{
         opacity: 0;
@@ -355,6 +356,7 @@ ul{
     padding-top: 50px;
     padding-bottom: 60px;
     gap: 100px;
+    padding: 40px;
 
 }
 
@@ -396,9 +398,8 @@ ul{
 }
 
 
-
 .post{
-    width: 250px;
+    max-width: 250px;
     margin: 1rem;
     border: 1px solid var(--borderColor);
     -webkit-box-shadow: -1px -1px 3px -1px rgba(0,0,0,0.75);
@@ -451,29 +452,6 @@ ul{
 
 
 
-
-
-
-
-
-/* * * * * * * * * * * U P D A T E D    P R O J E C T S    S E C T I O N * * * * * * * * * * */
-
-
-
-
-
-
-
-
-
-
-
-/*  *  *  *  *   *   *   C O N T A C T     F O R M     *  *  *   *  *   *  */
-
-
-
-
-
 #contact-form{
 	display: block;
 	max-width: 600px;
@@ -522,82 +500,122 @@ ul{
 
 
 
-@media screen and (max-width: 1200px){
+
+
+
+
+
+
+
+@media screen and (max-width: 860px){
+
     .main-container{
-        height: 100vh;
-        width: 90%;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 800px){
-
-
-    .intro-wrapper{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            'nav'
-            'right'
-            'left'
-        ;
-    }
-
-    
-
-    #preview-shadow{
-        background-color: var(--previewShadow);
-        width: 300px;
-        height: 200px;
-        padding-left: 0px;
-        padding-top: 0px;
-    }
-    
-    #preview{
-        width: 300px;
-        border: 1.5px solid #17a2b8;
-        background-color: var(--previewBg);
-        padding: 15px;
-        position: relative;
-        font-size: 18px;
-        font-weight: 500;
-    
-    }
-
-    
-
-    .right-column{
-        justify-content: center;
-        margin-bottom: 20px;
 
     }
 
-
-    .input-field{
+    .about-wrapper{
         
-        display: flex;
-    }
-
-    .post-wrapper{
-        flex-direction: column;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        gap: 50px;
+    
     }
 
     #social-img{
         display: none;
     }
-  
+
+    .post-wrapper{
+
+    }
+
+    .post{
+        width: 200px;
+    }
+ 
+}
+
+
+
+@media screen and (max-width: 700px){
+
+    .main-container{
+        height: 120vh;
+    }
     
+    .intro-wrapper{
+       
+        max-width: 900px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'nav'
+            'left'
+            'right'
+        ;
+    }
+
+    .right-column{
+        grid-area: right;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
+
+
     
+#preview-shadow{
+    max-width: 300px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+
+
+    .post-wrapper{
+        flex-direction: column;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .post{
+        width: 400px;
+        display: flex;
+    }
+
+    .thumbnail{
+        display: block;
+        height: 200px;
+        width: 50%;
+        object-fit: scale-down;
+    }
+   
 
 }
 
-@media screen and (max-width: 600px){
-    
 
-    .about-me{
-        padding: 6px;
+@media screen and (max-width: 450px){
+
+
+    .greeting-wrapper h1{
+        margin-top: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .left-column{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+    }
+
+    .about-wrapper{
+       padding: 15px;
+       text-align: center;
+    
+    }
+
+    .thumbnail{
+        display: none;
     }
 
 }
-
-
-
