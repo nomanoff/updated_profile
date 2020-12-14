@@ -36,6 +36,7 @@ body *{
 h1, h2, h3, h4, h5, h6, strong{
     color: var(--mainText);
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
 }
 
 
@@ -138,7 +139,8 @@ ul{
 }
 
 #navigation a{
-	color:var(--mainText);
+    color:var(--mainText);
+    font-size: 15px;
 }
 
 
@@ -440,13 +442,13 @@ ul{
     border: none;
     font-size: 1.3rem;
     margin: 10px;
-    background-color: #696a6d;
+    background-color: #3c404d;
     color: white;
     letter-spacing: 3px;
 }
 
 .view-link:hover{
-    background-color: #515255;
+    background-color: #2d303d;
     color: white;
     cursor: pointer;
 }
@@ -494,6 +496,7 @@ ul{
     color: #fff;
     background-color: var(--buttonColor);
     border: none;
+    cursor: pointer;
 }
 
 /*Start footer*/
@@ -539,9 +542,6 @@ ul{
         display: none;
     }
 
-    .post-wrapper{
-
-    }
 
     .post{
         width: 200px;
